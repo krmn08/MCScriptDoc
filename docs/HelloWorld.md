@@ -30,8 +30,8 @@ If you want to force execution, please add ";" at the end of the script.
 Scripts can be entered on multiple lines.
 ```
 /mcs repl
-a = 1
-for (x in Range(5)) {
+a = 0
+for x in 1..5 {
     a += x
 }
 /mcs repl
