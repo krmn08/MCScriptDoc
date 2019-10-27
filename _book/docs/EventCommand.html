@@ -1,0 +1,490 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Event, Command, Scheduling · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ErrorDefer.html" />
+    
+    
+    <link rel="prev" href="Define.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Environment.html">
+            
+                <a href="Environment.html">
+            
+                    
+                    Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Tutorial.html">
+            
+                <a href="Tutorial.html">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="HelloWorld.html">
+            
+                <a href="HelloWorld.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Basic.html">
+            
+                <a href="Basic.html">
+            
+                    
+                    Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Operator.html">
+            
+                <a href="Operator.html">
+            
+                    
+                    Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Function.html">
+            
+                <a href="Function.html">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Collection.html">
+            
+                <a href="Collection.html">
+            
+                    
+                    List、Map、YAML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="ArrayStr.html">
+            
+                <a href="ArrayStr.html">
+            
+                    
+                    Array、String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Control.html">
+            
+                <a href="Control.html">
+            
+                    
+                    Control Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Java.html">
+            
+                <a href="Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Define.html">
+            
+                <a href="Define.html">
+            
+                    
+                    Define
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.10" data-path="EventCommand.html">
+            
+                <a href="EventCommand.html">
+            
+                    
+                    Event, Command, Scheduling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="ErrorDefer.html">
+            
+                <a href="ErrorDefer.html">
+            
+                    
+                    Error Handling, Deferred Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Builtin.html">
+            
+                <a href="Builtin.html">
+            
+                    
+                    Builtin Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Event, Command, Scheduling</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="event-command-scheduling">Event, Command, Scheduling</h1>
+<p>When developing a plugin, registering event handlers, implementing commands, and scheduling processing are essential.
+In MCScript, the above process can be described concisely using a special syntax.</p>
+<h2 id="event">Event</h2>
+<p>Registering event handlers is very easy.
+Simply write the event name after the @ mark (Event is omitted) and write the processing in the block.
+Inside the block, the event object is passed to the <code>event</code> constant.</p>
+<pre><code>@PlayerInteract {
+    event.player.sendMessage(&quot;interact&quot;)
+}
+</code></pre><p>When specifying EventPriority, write it in parentheses after the event name.</p>
+<pre><code>@PlayerInteract(LOWEST) {
+    event.player.sendMessage(&quot;lowest&quot;)
+}
+</code></pre><h2 id="command">Command</h2>
+<p>The command implementation is almost the same as the function declaration.
+The function name is described as the command name, and the subsequent character string is assigned to the argument.
+When the command is executed, it is executed only if the number of arguments matches.
+Inside the function, CommandSender is passed to the <code>sender</code> constant.</p>
+<pre><code>command test(arg1, arg2) {
+    sender.sendMessage(arg1 + &quot;:&quot; + arg2)
+}
+</code></pre><pre><code>/test arg1 arg2 # arg1:arg2
+/test arg1 # nothing
+</code></pre><p>As with functions, default arguments are available.</p>
+<pre><code>command test(arg1, arg2: &quot;arg2&quot;) {
+    sender.sendMessage(arg1 + &quot;:&quot; + arg2)
+}
+</code></pre><pre><code>/test arg1 arg2 # arg1:arg2
+/test arg1 # arg1:arg2
+</code></pre><p>If you want to receive command arguments as an array, prefix the function name with ~.
+In this case, it is always executed regardless of the number of arguments.</p>
+<pre><code>command ~test(args) {
+    for arg in args {
+        sender.sendMessage(arg)
+    }
+}
+</code></pre><pre><code>/test 1 2 3 4 5
+/*
+1
+2
+3
+4
+5
+*/
+</code></pre><h2 id="scheduling">Scheduling</h2>
+<p>Use runnable expression to schedule processing.</p>
+<pre><code>r = runnable {
+    Println(&quot;test&quot;)
+}
+
+r.run() # runTask(PLUGIN)
+r.run(5) # runTaskLater(PLUGIN, 5)
+r.run(0, 1) # runTaskTimer(PLUGIN, 0, 1)
+</code></pre><p>The runnable expression can specify the maximum number of executions.</p>
+<pre><code>runnable(5) {
+    Println(getCount())
+}.run(0, 1)
+/*
+5
+4
+3
+2
+1
+*/
+</code></pre><p>The following methods are available in the runnable expression block:</p>
+<ul>
+<li>cancel()</li>
+<li>isCancelled()</li>
+<li>getTaskId()</li>
+<li>setCount(int)</li>
+<li>getCount()</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Define.html" class="navigation navigation-prev " aria-label="Previous page: Define">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ErrorDefer.html" class="navigation navigation-next " aria-label="Next page: Error Handling, Deferred Execution">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Event, Command, Scheduling","level":"1.3.10","depth":2,"next":{"title":"Error Handling, Deferred Execution","level":"1.3.11","depth":2,"path":"docs/ErrorDefer.md","ref":"docs/ErrorDefer.md","articles":[]},"previous":{"title":"Define","level":"1.3.9","depth":2,"path":"docs/Define.md","ref":"docs/Define.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/EventCommand.md","mtime":"2019-10-25T12:00:02.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-25T14:04:31.048Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
