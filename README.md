@@ -6,6 +6,9 @@ In addition to simple specifications, programs can be executed interactively wit
 
 Please report any errors or typographical errors in the program.
 
+This document is mostly translated by Google Translate.
+Please help improve the quality of the document.
+
 * github: https://github.com/krmn08/MCScript
 * twitter: https://twitter.com/krmndev
 
