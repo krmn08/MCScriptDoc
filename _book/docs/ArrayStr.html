@@ -338,7 +338,7 @@
                                 <h1 id="array-string">Array, String</h1>
 <h2 id="array">Array</h2>
 <p>Arrays are basically deprecated in MCScript. Basically, you should use lists and convert arrays from lists only when you need them. There is little advantage to using arrays with MCScript.</p>
-<h4 id="create-array">Create array</h4>
+<h4 id="create-array">Create Array</h4>
 <p>Use the Array function to create an array. Each element is initialized with the Java default value<sup><a href="#fn_1" id="reffn_1">1</a></sup>.</p>
 <pre><code>array = Array(int, 10)
 </code></pre><p>To convert a list to an array, pass the list as the second argument.</p>
@@ -348,17 +348,17 @@ array = Array(int, list)
 <pre><code>list = [&quot;abcd&quot;, &quot;efg&quot;, &quot;hi&quot;]
 array = Array(int, list, fun(s): s.length)
 array # [4, 3, 2]
-</code></pre><h4 id="access-elements">Access elements</h4>
+</code></pre><h4 id="access-elements">Access Elements</h4>
 <p>Access to elements is the same as Java, except that you can specify negative values.</p>
 <pre><code>array = Array(int, [1, 2, 3])
 array[0] = 0
 array[-1] = 4
 array # [0, 2, 4]
-</code></pre><h4 id="get-array-length">Get array length</h4>
+</code></pre><h4 id="get-array-length">Get Array Length</h4>
 <p>To get the length of an array, use the Length function.</p>
 <pre><code>array = Array(int, [1, 2, 3])
 Length(array) # 3
-</code></pre><h2 id="string-manipulation">String manipulation</h2>
+</code></pre><h2 id="string-manipulation">String Manipulation</h2>
 <p>You can treat strings like immutable character arrays.</p>
 <pre><code>str = &quot;hello&quot;
 str[0] # h
@@ -415,7 +415,7 @@ str[:] # hello
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Array, String","level":"1.3.6","depth":2,"next":{"title":"Control Statement","level":"1.3.7","depth":2,"path":"docs/Control.md","ref":"docs/Control.md","articles":[]},"previous":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"path":"docs/Collection.md","ref":"docs/Collection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/ArrayStr.md","mtime":"2019-10-01T01:21:58.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T09:02:40.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Array, String","level":"1.3.6","depth":2,"next":{"title":"Control Statement","level":"1.3.7","depth":2,"path":"docs/Control.md","ref":"docs/Control.md","articles":[]},"previous":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"path":"docs/Collection.md","ref":"docs/Collection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/ArrayStr.md","mtime":"2020-05-08T18:52:39.955Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T19:08:25.010Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -3,7 +3,7 @@
 ## Array
 Arrays are basically deprecated in MCScript. Basically, you should use lists and convert arrays from lists only when you need them. There is little advantage to using arrays with MCScript.
 
-#### Create array
+#### Create Array
 Use the Array function to create an array. Each element is initialized with the Java default value[^1].
 ```
 array = Array(int, 10)
@@ -19,7 +19,7 @@ list = ["abcd", "efg", "hi"]
 array = Array(int, list, fun(s): s.length)
 array # [4, 3, 2]
 ```
-#### Access elements
+#### Access Elements
 Access to elements is the same as Java, except that you can specify negative values.
 ```
 array = Array(int, [1, 2, 3])
@@ -27,13 +27,13 @@ array[0] = 0
 array[-1] = 4
 array # [0, 2, 4]
 ```
-#### Get array length
+#### Get Array Length
 To get the length of an array, use the Length function.
 ```
 array = Array(int, [1, 2, 3])
 Length(array) # 3
 ```
-## String manipulation
+## String Manipulation
 You can treat strings like immutable character arrays.
 ```
 str = "hello"

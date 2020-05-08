@@ -9,10 +9,6 @@ fun(x) {
     Println(x)
 }
 ```
-You can omit the curly braces for a single expression.
-```
-fun(x): Println(x)
-```
 #### Arguments
 MCScript does not support function overloading. Instead, default arguments are available.
 ```
@@ -30,7 +26,7 @@ Function objects can be described with the same lambda expression as Java.
     x + y
 }
 ```
-## Function definition
+## Function Definition
 You can also define a named function explicitly without assigning an anonymous function to a variable.
 ```
 fun f(x, y) {
@@ -64,7 +60,14 @@ fun f(x) {
     Println(x)
 }
 ```
-#### Public function
+#### Type Hint
+You can specify the return type when you declare a function literal or function. This does not affect the actual behavior, but it does allow completion with the mcs command.
+```
+fun f(x): String {
+    x.toString()
+}
+```
+#### Public Function
 When writing to a script file, function cannot be called from outside. In MCScript, you can call from outside by capitalizing the first letter of the function name.
 
 public.mcs
@@ -91,7 +94,7 @@ fun Public() {
 
 Public()
 ```
-## Function call
+## Function Call
 Define the add function.
 ```
 fun add(x, y: 1) {

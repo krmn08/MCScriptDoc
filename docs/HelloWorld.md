@@ -13,7 +13,7 @@ When actually developing a plugin, write the script in a file (.mcs) and place i
 
 ### Execute with /mcs command
 
-It can be executed by writing a script after /mcs. This is useful if you want to execute a short script immediately.
+It can be executed by writing a script after /mcs. This is useful if you want to execute a short script immediately. Also, when using the mcs command, the completion is displayed.
 ```
 /mcs a = 1 + 1
 ```

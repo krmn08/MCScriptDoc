@@ -6,7 +6,7 @@ MCScript control statements almost inherit Java control statements, but have the
 The reason why the above functions were not implemented is that there is no problem even if it is not, and it may reduce the readability of the source.
 
 However, in MCScript, if and switch can be handled as expressions and the extension for is further enhanced, convenience has improved. In this section, we will explain in detail such control statements.
-## Conditional branch
+## Conditional Branch
 MCScript conditional branching is not significantly different from Java.
 #### if
 MCScript if can omit parentheses.
