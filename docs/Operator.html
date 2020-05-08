@@ -337,20 +337,20 @@
                                 
                                 <h1 id="operator">Operator</h1>
 <p>MCScript can use all Java operators except unsigned right shift, increment, and decrement. In this section, we will discuss operators that are not in Java and that operate differently.</p>
-<h4 id="floor-division-operator-">Floor division operator &quot;//&quot;</h4>
+<h4 id="floor-division-operator-">Floor Division Operator &quot;//&quot;</h4>
 <p>After normal division, round down after the decimal point.</p>
 <pre><code>Println(5d // 2) # 2
 Println(1.5 // 1) # 1
-</code></pre><h4 id="power-operator-">Power operator &quot;**&quot;</h4>
+</code></pre><h4 id="power-operator-">Power Operator &quot;**&quot;</h4>
 <p>Calculate the power.</p>
 <pre><code>Println(2 ** 8) # 256
 Println(0 ** 0) # 1
 </code></pre><p>//=, **= can also be used.</p>
-<h4 id="equality-operators--">Equality operators &quot;==&quot; &quot;!=&quot;</h4>
+<h4 id="equality-operators--">Equality Operators &quot;==&quot; &quot;!=&quot;</h4>
 <p>The equality operator is the equals method in Java.</p>
 <pre><code>Println(&quot;aaa&quot; == String(&quot;aaa&quot;)) # true
 Println(&quot;aaa&quot; != String(&quot;aaa&quot;)) # false
-</code></pre><h4 id="referential-equality-operators-is-isnot">Referential equality operators &quot;is&quot; &quot;isnot&quot;</h4>
+</code></pre><h4 id="referential-equality-operators-is-isnot">Referential Equality Operators &quot;is&quot; &quot;isnot&quot;</h4>
 <p>The referential equality operator is equivalent to &#x201C;==&#x201D; in Java.
 Since MCScript numbers are handled by the wrapper class, comparison with the reference equality operator is not possible.<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
 <pre><code>Println(128 is 128) # false
@@ -363,7 +363,7 @@ Println(a isnot null) # false
 
 a = true
 Println(a is true) # true
-</code></pre><h4 id="membership-test-operators-in-notin">Membership test operators &quot;in&quot; &quot;notin&quot;</h4>
+</code></pre><h4 id="membership-test-operators-in-notin">Membership Test Operators &quot;in&quot; &quot;notin&quot;</h4>
 <p>If the right side is a collection, it is synonymous with contains. If it is a Map, it is synonymous with containsKey. In the case of an array, each element is looped and compared using the equals method.</p>
 <pre><code>list = [1, 2, 3]
 Println(1 in list) # true
@@ -379,7 +379,7 @@ Println(1 in array) # true
 </code></pre><p>You can also determine if the number is within range.</p>
 <pre><code>Println(4 in 1..10) # true
 Println(4 notin 5..1) # false
-</code></pre><h4 id="null-coalescing-operator&#x300C;&#x300D;">Null coalescing operator&#x300C;?:&#x300D;</h4>
+</code></pre><h4 id="null-coalescing-operator&#x300C;&#x300D;">Null Coalescing Operator&#x300C;?:&#x300D;</h4>
 <p>If the left side is null, the right side is evaluated; otherwise, the left side is evaluated.</p>
 <pre><code>a = 1
 Println(a ?: 2) # 1
@@ -431,7 +431,7 @@ Println(a ?: 2) # 2
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Operator","level":"1.3.3","depth":2,"next":{"title":"Function","level":"1.3.4","depth":2,"path":"docs/Function.md","ref":"docs/Function.md","articles":[]},"previous":{"title":"Basic","level":"1.3.2","depth":2,"path":"docs/Basic.md","ref":"docs/Basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Operator.md","mtime":"2019-10-25T13:55:41.376Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T09:02:40.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Operator","level":"1.3.3","depth":2,"next":{"title":"Function","level":"1.3.4","depth":2,"path":"docs/Function.md","ref":"docs/Function.md","articles":[]},"previous":{"title":"Basic","level":"1.3.2","depth":2,"path":"docs/Basic.md","ref":"docs/Basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Operator.md","mtime":"2020-05-08T18:54:05.026Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T19:08:25.010Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

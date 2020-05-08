@@ -38,7 +38,7 @@ if true {
 Println(a + b) # 2
 ```
 
-### Multi-value
+### Multi Value
 MCScript treats multiple values as multi-value by separating them with commas.
 By using multi-value, you can assign to multiple variables at once.
 ```
@@ -70,7 +70,7 @@ A numeric literal without a decimal point is treated as an Integer type, and whe
 1 # Integer
 1l # Long
 ```
-#### Floating point
+#### Floating Point
 A numeric literal with a decimal point is treated as a Double type, and if it ends with f or F, it is treated as a Float type.
 In addition, it is handled as a double type by adding d or D to an integer literal.
 ```

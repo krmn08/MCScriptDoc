@@ -346,21 +346,21 @@ list = [
 ]
 list = []
 </code></pre><p>MCScript lists are implemented with ArrayList. You can call and manipulate methods, but MCScript is more intuitive.</p>
-<h4 id="access-elements">Access elements</h4>
+<h4 id="access-elements">Access Elements</h4>
 <p>In Java, you use get or set methods to access elements, but in MCScript you can access lists with subscripts, like arrays.
 You can also specify the index from the back by specifying a negative value for the subscript. This behavior also applies to array and string subscripts.</p>
 <pre><code>list = [1, 2, 3]
 list[1] # 2
 list[1] = 1
 list # [1, 1, 3]
-</code></pre><h4 id="addremove-elements">Add/Remove elements</h4>
+</code></pre><h4 id="addremove-elements">Add/Remove Elements</h4>
 <p>You can do this efficiently by using the built-in functions Add and Remove.</p>
 <pre><code>list = [&quot;abc&quot;, &quot;def&quot;]
 Add(list, &quot;ghi&quot;)
 Remove(list, 1)
 Remove(list, &quot;abc&quot;)
 list # [&quot;ghi&quot;]
-</code></pre><h4 id="select-a-elements-of-list">Select a elements of list</h4>
+</code></pre><h4 id="select-a-elements-of-list">Select a Elements of List</h4>
 <p>In MCScript, you can select a range of lists with subscripts. Internally, it makes use of the subList, so a reference to the original list is preserved.</p>
 <pre><code>list = [1, 2, 3]
 list[1:3] # [2, 3]
@@ -370,7 +370,7 @@ list[0:0] # []
 list[1:] # [2, 3]
 list[:2] # [1, 2]
 list[:] # [1, 2, 3]
-</code></pre><h4 id="delete-part-of-list">Delete part of list</h4>
+</code></pre><h4 id="delete-part-of-list">Delete Part of List</h4>
 <p>You can also use a range selection in the list to delete a selection.</p>
 <pre><code>list = [1, 2, 3]
 list[1:].clear()
@@ -385,7 +385,7 @@ map = {
 }
 map = {}
 </code></pre><p>MCScript maps are implemented in LinkedHashMap, so they preserve the insertion order. Like the list, it provides some useful syntax.</p>
-<h4 id="access-map">Access map</h4>
+<h4 id="access-map">Access Map</h4>
 <p>Like the list, you can access the map by subscript. This works the same as get and put in Java.</p>
 <pre><code>map = {1:&quot;a&quot;, &quot;2&quot;:&quot;b&quot;, obj:&quot;c&quot;}
 map[1] # a
@@ -470,7 +470,7 @@ yaml.save(path)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"next":{"title":"Array, String","level":"1.3.6","depth":2,"path":"docs/ArrayStr.md","ref":"docs/ArrayStr.md","articles":[]},"previous":{"title":"Function","level":"1.3.4","depth":2,"path":"docs/Function.md","ref":"docs/Function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Collection.md","mtime":"2019-10-01T01:15:22.596Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T09:02:40.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"next":{"title":"Array, String","level":"1.3.6","depth":2,"path":"docs/ArrayStr.md","ref":"docs/ArrayStr.md","articles":[]},"previous":{"title":"Function","level":"1.3.4","depth":2,"path":"docs/Function.md","ref":"docs/Function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Collection.md","mtime":"2020-05-08T18:52:39.955Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T19:08:25.010Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

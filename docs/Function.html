@@ -344,8 +344,6 @@ MCScript functions return the result of the last evaluated statement.</p>
 <pre><code>fun(x) {
     Println(x)
 }
-</code></pre><p>You can omit the curly braces for a single expression.</p>
-<pre><code>fun(x): Println(x)
 </code></pre><h4 id="arguments">Arguments</h4>
 <p>MCScript does not support function overloading. Instead, default arguments are available.</p>
 <pre><code>f = fun(x, y: 3) {
@@ -359,7 +357,7 @@ f(1, 2) # 3
 (x, y: 3) -&gt; {
     x + y
 }
-</code></pre><h2 id="function-definition">Function definition</h2>
+</code></pre><h2 id="function-definition">Function Definition</h2>
 <p>You can also define a named function explicitly without assigning an anonymous function to a variable.</p>
 <pre><code>fun f(x, y) {
     x + y
@@ -383,7 +381,12 @@ f = fun(x) {
 fun f(x) {
     Println(x)
 }
-</code></pre><h4 id="public-function">Public function</h4>
+</code></pre><h4 id="type-hint">Type Hint</h4>
+<p>You can specify the return type when you declare a function literal or function. This does not affect the actual behavior, but it does allow completion with the mcs command.</p>
+<pre><code>fun f(x): String {
+    x.toString()
+}
+</code></pre><h4 id="public-function">Public Function</h4>
 <p>When writing to a script file, function cannot be called from outside. In MCScript, you can call from outside by capitalizing the first letter of the function name.</p>
 <p>public.mcs</p>
 <pre><code>fun Public(x) {
@@ -403,7 +406,7 @@ fun Public() {
 }
 
 Public()
-</code></pre><h2 id="function-call">Function call</h2>
+</code></pre><h2 id="function-call">Function Call</h2>
 <p>Define the add function.</p>
 <pre><code>fun add(x, y: 1) {
     x + y
@@ -463,7 +466,7 @@ sum(c: 3, b: 2, 0) # 5
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Function","level":"1.3.4","depth":2,"next":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"path":"docs/Collection.md","ref":"docs/Collection.md","articles":[]},"previous":{"title":"Operator","level":"1.3.3","depth":2,"path":"docs/Operator.md","ref":"docs/Operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Function.md","mtime":"2019-10-01T00:40:46.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T09:02:40.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Function","level":"1.3.4","depth":2,"next":{"title":"List, Map, YAML","level":"1.3.5","depth":2,"path":"docs/Collection.md","ref":"docs/Collection.md","articles":[]},"previous":{"title":"Operator","level":"1.3.3","depth":2,"path":"docs/Operator.md","ref":"docs/Operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Function.md","mtime":"2020-05-08T18:55:45.203Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T19:08:25.010Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -11,7 +11,7 @@ list = [
 list = []
 ```
 MCScript lists are implemented with ArrayList. You can call and manipulate methods, but MCScript is more intuitive.
-#### Access elements
+#### Access Elements
 In Java, you use get or set methods to access elements, but in MCScript you can access lists with subscripts, like arrays.
 You can also specify the index from the back by specifying a negative value for the subscript. This behavior also applies to array and string subscripts.
 
@@ -21,7 +21,7 @@ list[1] # 2
 list[1] = 1
 list # [1, 1, 3]
 ```
-#### Add/Remove elements
+#### Add/Remove Elements
 You can do this efficiently by using the built-in functions Add and Remove.
 ```
 list = ["abc", "def"]
@@ -30,7 +30,7 @@ Remove(list, 1)
 Remove(list, "abc")
 list # ["ghi"]
 ```
-#### Select a elements of list
+#### Select a Elements of List
 In MCScript, you can select a range of lists with subscripts. Internally, it makes use of the subList, so a reference to the original list is preserved.
 ```
 list = [1, 2, 3]
@@ -44,7 +44,7 @@ list[1:] # [2, 3]
 list[:2] # [1, 2]
 list[:] # [1, 2, 3]
 ```
-#### Delete part of list
+#### Delete Part of List
 You can also use a range selection in the list to delete a selection.
 ```
 list = [1, 2, 3]
@@ -63,7 +63,7 @@ map = {
 map = {}
 ```
 MCScript maps are implemented in LinkedHashMap, so they preserve the insertion order. Like the list, it provides some useful syntax.
-#### Access map
+#### Access Map
 Like the list, you can access the map by subscript. This works the same as get and put in Java.
 ```
 map = {1:"a", "2":"b", obj:"c"}
