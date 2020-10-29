@@ -12,4 +12,4 @@ Please help improve the quality of the document.
 * github: https://github.com/krmn08/MCScript
 * twitter: https://twitter.com/krmndev
 
-Version 2.0
+Version 3.0

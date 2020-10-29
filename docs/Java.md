@@ -14,6 +14,10 @@ const Calendar = java.util.Calendar
 Calender # ClassObject class
 Calender.class # Calendar class
 ```
+It also supports import using wildcard.
+```
+import java.util.*
+```
 ## Creating Objects
 Unlike Java, there is no need to add new when creating an object.
 ```
