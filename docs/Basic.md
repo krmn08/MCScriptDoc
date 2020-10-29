@@ -37,7 +37,10 @@ if true {
 }
 Println(a + b) # 2
 ```
-
+You can read a variable from another file by prefixing the variable declaration with public. This variable is treated as a constant.
+```
+public a = 1
+```
 ### Multi Value
 MCScript treats multiple values as multi-value by separating them with commas.
 By using multi-value, you can assign to multiple variables at once.
